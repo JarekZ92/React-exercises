@@ -17,6 +17,14 @@ class App extends React.Component {
     })
   }
 
+  resetCounter = () => {
+    this.setState({
+      startCount: this.state.startCount = 0
+    })
+  }
+
+
+
 
 
 
