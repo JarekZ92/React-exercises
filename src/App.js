@@ -1,6 +1,32 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class App extends Component {
+class App extends React.Component {
+  state = {
+    startCount: 0
+  }
+
+  additionCounter = () => {
+    this.setState({
+      startCount: this.state.startCount + 1
+    })
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   render() {
     return (
       <div>
