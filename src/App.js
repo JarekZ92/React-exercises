@@ -28,6 +28,8 @@ class App extends React.Component {
       <div>
         <h1>{this.state.startCount}</h1>
         <button onClick={this.additionCounter}> + </button>
+        <button onClick={this.substractCounter}> - </button>
+        <br /> <button onClick={this.resetCounter}> Reset counter </button>
       </div>
     );
   }
