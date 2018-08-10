@@ -23,28 +23,11 @@ class App extends React.Component {
     })
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   render() {
     return (
       <div>
-
+        <h1>{this.state.startCount}</h1>
+        <button onClick={this.additionCounter}> + </button>
       </div>
     );
   }
