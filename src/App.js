@@ -11,6 +11,12 @@ class App extends React.Component {
     })
   }
 
+  substractCounter = () => {
+    this.setState({
+      startCount: this.state.startCount - 1
+    })
+  }
+
 
 
 
