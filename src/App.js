@@ -22,23 +22,8 @@ class Counter extends React.Component {
       startCount: this.state.startCount = 0
     })
   }
-
-  componentDidUpdate() {
-    const request = {
-      method: "PUT",
-      body: JSON.stringify({ startCount: this.state.startCount })
-    }
-
-
-    fetch('https://react-exercises.firebaseio.com/counter/state.json', request)
-      .then(response => {
-        this.setState({
-          startCount: this.state.startCount
-        })
-      })
-  }
-
   componentDidMount() {
+
     fetch('https://react-exercises.firebaseio.com/counter/state.json')
       .then(response => response.json())
       .then(data => {
@@ -48,7 +33,20 @@ class Counter extends React.Component {
       })
   }
 
+  componentDidUpdate() {
+    const request = {
+      method: 'PUT',
+      body: JSON.stringify(this.state.startCount)
+    }
 
+    fetch('https://react-exercises.firebaseio.com/counter/state.json', request)
+      .then(response => {
+
+        this.setState({
+          startCount: this.state.startCount
+        })
+      })
+  }
 
   render() {
     return (
