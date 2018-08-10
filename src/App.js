@@ -1,6 +1,6 @@
 import React from 'react';
 
-class App extends React.Component {
+class Counter extends React.Component {
   state = {
     startCount: 0
   }
@@ -35,4 +35,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default Counter;
