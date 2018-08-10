@@ -23,16 +23,18 @@ class Counter extends React.Component {
     })
   }
 
-  render() {
-    return (
-      <div>
-        <h1>{this.state.startCount}</h1>
-        <button onClick={this.additionCounter}> + </button>
-        <button onClick={this.substractCounter}> - </button>
-        <br /> <button onClick={this.resetCounter}> Reset counter </button>
-      </div>
-    );
-  }
+  // https://react-exercises.firebaseio.com/
+
+    render() {
+      return (
+        <div>
+          <h1>{this.state.startCount}</h1>
+          <button onClick={this.additionCounter}> + </button>
+          <button onClick={this.substractCounter}> - </button>
+          <br /> <button onClick={this.resetCounter}> Reset counter </button>
+        </div>
+      );
+    }
 }
 
 export default Counter;
